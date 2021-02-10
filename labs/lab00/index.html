@@ -456,6 +456,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab01/" class="md-nav__link">
+        01: C y GDB
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -739,7 +751,7 @@
  7
  8
  9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>On branch master
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>On branch main
 
 No commits yet
 
@@ -758,8 +770,8 @@ nothing added to commit but untracked files present <span class="o">(</span>use 
 3
 4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git add hello.sh <span class="c1"># agrega el archivo hello.sh para hacer commit</span>
 git commit -m <span class="s2">&quot;Mensaje del Commit&quot;</span> <span class="c1"># ingresa cualquier mensaje que quieras</span>
-git branch <span class="c1"># deberias de ver que solo existe el branch master y que estas en ella (*)</span>
-git push -u origin master <span class="c1"># Esto hace push de tu codigo hacia GitHub (lo puedes ver en GitHub ahora)</span>
+git branch <span class="c1"># deberias de ver que solo existe el branch main y que estas en ella (*)</span>
+git push -u origin main <span class="c1"># Esto hace push de tu codigo hacia GitHub (lo puedes ver en GitHub ahora)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -767,7 +779,7 @@ git push -u origin master <span class="c1"># Esto hace push de tu codigo hacia G
 <ul>
 <li><strong>git add [archivo]</strong> le dirá a git que han hecho cambios a ese archivo y que quieren que esos cambios se guarden en el siguiente commit (staging).</li>
 <li><strong>git commit -m "mensaje"</strong> oficialmente guarda esos cambios que acaban de agregar, y crea un <em>snapshot</em> del contenido actual de todos los archivos en el repositorio. Ahora siempre van a tener la opción de revertir su código hacia este commit.</li>
-<li><strong>git push -u origin master</strong> manda todo el contenido del repositorio que está en el branch "master" al repositorio remoto "origin" (recuerden que agregamos el repositorio de GitHub "lab0_git" como remote y lo llamamos "origin").</li>
+<li><strong>git push -u origin main</strong> manda todo el contenido del repositorio que está en el branch "main" al repositorio remoto "origin" (recuerden que agregamos el repositorio de GitHub "lab0_git" como remote y lo llamamos "origin").</li>
 </ul>
 <p>Cuando estamos trabajando con git, si alguna vez no están seguros de algo, pero quieren asegurarse de que tienen una copia guardada del contenido actual de su código, solo tienen que correr <code>git add .</code> y después <code>git commit</code> en la terminal.</p>
 <p>Un último comando de git que pueden encontrar bastante util es <code>git log</code>. Pueden ejectuar este comando en la terminal y van a ver un historial o log de todos los commits que se han hecho (en el branch actual), incluyendo el tiempo y quien hizo el commit.</p>
@@ -819,7 +831,7 @@ git push -u origin master <span class="c1"># Esto hace push de tu codigo hacia G
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git add ex4.txt
 git commit -m <span class="s2">&quot;ex. 3 complete&quot;</span>
-git push -u origin master
+git push -u origin main
 </code></pre></div>
 </td></tr></table>
 
@@ -836,7 +848,7 @@ En los archivos del laboratorio hay un archivo de texto llamado <code>ex4.txt</c
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git add ex4.txt
 git commit -m <span class="s2">&quot;ex. 4 complete&quot;</span>
-git push -u origin master
+git push -u origin main
 </code></pre></div>
 </td></tr></table>
 
@@ -878,13 +890,13 @@ git push -u origin master
           </a>
         
         
-          <a href="../.." class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../lab01/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Proyectos
+                01: C y GDB
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
