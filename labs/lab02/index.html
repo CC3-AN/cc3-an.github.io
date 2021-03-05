@@ -13,14 +13,14 @@
         <meta name="author" content="CC-3">
       
       
-        <link rel="canonical" href="https://cc3-an.github.io/labs/lab00/">
+        <link rel="canonical" href="https://cc3-an.github.io/labs/lab02/">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.4">
     
     
       
-        <title>00: Git - Estructura de Máquinas</title>
+        <title>02: C Avanzado - Estructura de Máquinas</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#lab-0-git-y-representacion-de-numeros" class="md-skip">
+        <a href="#lab-2-c-avanzado-y-manejo-de-memoria" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              00: Git
+              02: C Avanzado
             
           </span>
         </div>
@@ -189,7 +189,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../lab00/" class="md-tabs__link md-tabs__link--active">
         Laboratorios
       </a>
     </li>
@@ -314,6 +314,30 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../lab00/" class="md-nav__link">
+        00: Git
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lab01/" class="md-nav__link">
+        01: C y GDB
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -325,12 +349,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          00: Git
+          02: C Avanzado
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        00: Git
+        02: C Avanzado
       </a>
       
         
@@ -354,57 +378,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lecturas" class="md-nav__link">
-    Lecturas
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ejercicio-1-cuenta-de-github" class="md-nav__link">
-    Ejercicio 1: Cuenta de GitHub
-  </a>
-  
-    <nav class="md-nav" aria-label="Ejercicio 1: Cuenta de GitHub">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#github-onboarding" class="md-nav__link">
-    GitHub Onboarding
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#preparacion" class="md-nav__link">
     Preparación
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#configurando-git" class="md-nav__link">
-    Configurando git
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-1-operando-bits" class="md-nav__link">
+    Ejercicio 1: Operando Bits
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejercicio-2-git-y-remotes" class="md-nav__link">
-    Ejercicio 2: git y Remotes
+  <a href="#ejercicio-2-registro-de-corrimiento-con-retroalimentacion-lineal" class="md-nav__link">
+    Ejercicio 2: Registro de Corrimiento con Retroalimentación Lineal
   </a>
   
-    <nav class="md-nav" aria-label="Ejercicio 2: git y Remotes">
+    <nav class="md-nav" aria-label="Ejercicio 2: Registro de Corrimiento con Retroalimentación Lineal">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#haciendo-push-hacia-github" class="md-nav__link">
-    Haciendo push hacia GitHub
+  <a href="#diagrama-del-hardware-explicacion-mas-abajo" class="md-nav__link">
+    Diagrama del Hardware (Explicación Más Abajo)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion-del-diagrama-de-arriba" class="md-nav__link">
+    Explicación del Diagrama de Arriba
   </a>
   
 </li>
@@ -415,16 +419,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejercicio-3-alfabeto-binario" class="md-nav__link">
-    Ejercicio 3: Alfabeto Binario
+  <a href="#ejercicio-3-manejo-de-memoria" class="md-nav__link">
+    Ejercicio 3: Manejo de Memoria
   </a>
   
-    <nav class="md-nav" aria-label="Ejercicio 3: Alfabeto Binario">
+    <nav class="md-nav" aria-label="Ejercicio 3: Manejo de Memoria">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preguntas" class="md-nav__link">
-    Preguntas
+  <a href="#como-funciona-un-vector_t" class="md-nav__link">
+    ¿Cómo funciona un vector_t?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-deben-hacer" class="md-nav__link">
+    ¿Qué deben hacer?
   </a>
   
 </li>
@@ -435,15 +446,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejercicio-4-1000-billetes-de-1" class="md-nav__link">
-    Ejercicio 4: 1,000 billetes de $1
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entrega-y-calificacion" class="md-nav__link">
-    Entrega y calificación
+  <a href="#calificacion" class="md-nav__link">
+    Calificación
   </a>
   
 </li>
@@ -452,30 +456,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lab01/" class="md-nav__link">
-        01: C y GDB
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../lab02/" class="md-nav__link">
-        02: C Avanzado
-      </a>
     </li>
   
 
@@ -587,57 +567,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lecturas" class="md-nav__link">
-    Lecturas
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ejercicio-1-cuenta-de-github" class="md-nav__link">
-    Ejercicio 1: Cuenta de GitHub
-  </a>
-  
-    <nav class="md-nav" aria-label="Ejercicio 1: Cuenta de GitHub">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#github-onboarding" class="md-nav__link">
-    GitHub Onboarding
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#preparacion" class="md-nav__link">
     Preparación
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#configurando-git" class="md-nav__link">
-    Configurando git
+      
+        <li class="md-nav__item">
+  <a href="#ejercicio-1-operando-bits" class="md-nav__link">
+    Ejercicio 1: Operando Bits
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejercicio-2-git-y-remotes" class="md-nav__link">
-    Ejercicio 2: git y Remotes
+  <a href="#ejercicio-2-registro-de-corrimiento-con-retroalimentacion-lineal" class="md-nav__link">
+    Ejercicio 2: Registro de Corrimiento con Retroalimentación Lineal
   </a>
   
-    <nav class="md-nav" aria-label="Ejercicio 2: git y Remotes">
+    <nav class="md-nav" aria-label="Ejercicio 2: Registro de Corrimiento con Retroalimentación Lineal">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#haciendo-push-hacia-github" class="md-nav__link">
-    Haciendo push hacia GitHub
+  <a href="#diagrama-del-hardware-explicacion-mas-abajo" class="md-nav__link">
+    Diagrama del Hardware (Explicación Más Abajo)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicacion-del-diagrama-de-arriba" class="md-nav__link">
+    Explicación del Diagrama de Arriba
   </a>
   
 </li>
@@ -648,16 +608,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejercicio-3-alfabeto-binario" class="md-nav__link">
-    Ejercicio 3: Alfabeto Binario
+  <a href="#ejercicio-3-manejo-de-memoria" class="md-nav__link">
+    Ejercicio 3: Manejo de Memoria
   </a>
   
-    <nav class="md-nav" aria-label="Ejercicio 3: Alfabeto Binario">
+    <nav class="md-nav" aria-label="Ejercicio 3: Manejo de Memoria">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#preguntas" class="md-nav__link">
-    Preguntas
+  <a href="#como-funciona-un-vector_t" class="md-nav__link">
+    ¿Cómo funciona un vector_t?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#que-deben-hacer" class="md-nav__link">
+    ¿Qué deben hacer?
   </a>
   
 </li>
@@ -668,15 +635,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ejercicio-4-1000-billetes-de-1" class="md-nav__link">
-    Ejercicio 4: 1,000 billetes de $1
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#entrega-y-calificacion" class="md-nav__link">
-    Entrega y calificación
+  <a href="#calificacion" class="md-nav__link">
+    Calificación
   </a>
   
 </li>
@@ -693,71 +653,38 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/cc3-an/docs/edit/main/docs/labs/lab00.md" title="Editar esta página" class="md-content__button md-icon">
+                  <a href="https://github.com/cc3-an/docs/edit/main/docs/labs/lab02.md" title="Editar esta página" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="lab-0-git-y-representacion-de-numeros">Lab 0 - Git y Representación de Números</h1>
+                <h1 id="lab-2-c-avanzado-y-manejo-de-memoria">Lab 2 - C Avanzado y Manejo de Memoria</h1>
 <h2 id="objetivos">Objetivos</h2>
 <ul>
-<li>Aprender git y crear cuenta de GitHub.</li>
-<li>Ganar más intuición para trabajar con números binarios.</li>
+<li>Manipular los bits de números binarios.</li>
+<li>Aprendan a utilizar sus nuevos poderes.</li>
+<li>Practicar trabajar con la asignación de memoria de manera dinámica (esa cosa de <em>malloc</em>).</li>
+<li>Aprovechar toda la memoria no utilizada.</li>
+<li>Pensar cómo el manejo de memoria dinámica los puede hacer mejores personas.</li>
+<li>Son bromas, pero sólo los puede volver mejores programadores.</li>
 </ul>
-<h2 id="lecturas">Lecturas</h2>
-<p><img alt="PH" src="/assets/img/PH.jpg" /></p>
-<ul>
-<li>P&amp;H: 2.4</li>
-</ul>
-<h2 id="ejercicio-1-cuenta-de-github">Ejercicio 1: Cuenta de GitHub</h2>
-<p>Por favor lean las siguientes instrucciones cuidadosamente antes de seguir con el laboratorio. La mayor parte de los problemas que tienen los estudiantes durante este laboratorio se pueden prevenir siguiendo atentamente los pasos que se indican.</p>
-<p>Para este curso necesitaremos que utilicen <strong>git</strong>, un <em>sistema de control de versiones distribuido</em>. Los sistemas de control de versiones son las mejores herramientas para compartir y almacenar código a comparación de mandar correos con archivos adjuntos, utilizar memorias flash, o incluso compartir documentos mediante DropBox o Google Docs.</p>
-<p>Vamos a estar usando <strong>GitHub</strong> para tener repositorios privados en donde van a <em>almacenar</em> su código remotamente. Si la oración anterior no les dijo nada, no se preocupen, vamos a guiarlos en el proceso más adelante. Pero primero, necesitan crear una cuenta de <strong>GitHub</strong>.</p>
-<p>¿Por qué GitHub? GitHub ahora le permite a todas las cuentas gratuitas tener repositorios privados ilimitados con algunas limitaciones que no van a ser ningún problema para nosotros.</p>
-<h3 id="github-onboarding">GitHub Onboarding</h3>
-<p>Naveguen a la siguiente página: <a href="https://github.com/">github.com</a>. Si no tienen una cuenta de GitHub todavía, creen una en el siguiente <a href="https://github.com/join/">link</a>.</p>
-<h3 id="preparacion">Preparación</h3>
-<p>Visiten este <a href="https://classroom.github.com/a/1Ix7PBBh">link</a>. Aquí encontrarán todos los archivos necesarios para completar este laboratorio. En esta página, encontrarán un botón que dice "Accept this assignment". Al presionar este botón, se creará automáticamente un repositorio en Github llamado <code>https://www.github.com/cc3-an/2021-lab00-git-&lt;USUARIO&gt;</code>. Noten que el "dueño" de este repositorio es un usuario llamado <code>cc3-an</code>, y el usuario de ustedes es únicamente el sufijo del nombre del repo. De esta forma, nos encargamos de tener acceso siempre a su código, en caso existan copias o cualquier otro tipo de trampa. Sepan de una vez que, si encontramos plagio en sus laboratorios, su nota será AUTOMÁTICAMENTE 0, sin posibilidad de cambiarla. De repetirse nuevamente este acontecimiento, el staff del curso organizará una reunión con ustedes y sus directores de carrera para contarles lo ocurrido y sancionarlos conforme al reglamento de la universidad.</p>
-<p>Después de realizar esto, en la máquina virtual (o sus propias computadoras) abran una terminal en el directorio que prefieran, y ejecuten el siguiente comando:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git clone https://github.com/cc3-an/2021-lab00-git-&lt;SU USUARIO DE GITHUB&gt;
+<h2 id="preparacion">Preparación</h2>
+<p>De primero, deben de descargar todos los archivos que necesitarán para completar este laboratorio, estos se encuentran <a href="https://classroom.github.com/a/QP_J2KA_">aquí</a>. Recuerden que deben aceptar la asignación y se les creará automáticamente un repositorio con una extensión que termina con su usuario.
+Recuerden que este será revisado en búsqueda de copia o plagio, así que no lo hagan. De lo contrario, será sancionado acorde al reglamento de la universidad.</p>
+<p>Ahora, ya pueden ejecutar en la terminal el comando que les descargará los archivos base en el directorio a su elección:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git clone link_al_lab
 </code></pre></div>
 </td></tr></table>
-<p>esto descargará en el directorio que escogieron todos los archivos base para este laboratorio.</p>
-<h3 id="configurando-git">Configurando git</h3>
-<p>Ahora que ya hemos creado nuestro repositorio, vamos a configurar git para que sepa quiénes son. Abran una terminal
-<span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-alt">Alt</kbd><span>+</span><kbd class="key-t">T</kbd></span> y ejecuten los siguientes comandos listados abajo, reemplazando <strong>NOMBRE</strong> con su nombre y apellido (entre comillas) y <strong>CORREO</strong> con la dirección de correo que utilizarón para registrarse en GitHub.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git config --global user.name <span class="s2">&quot;NOMBRE&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git config --global user.email <span class="s2">&quot;CORREO&quot;</span>
-</code></pre></div>
-</td></tr></table>
-<h2 id="ejercicio-2-git-y-remotes">Ejercicio 2: git y Remotes</h2>
-<p>Primero, algunas definiciones rápidas:</p>
-<ul>
-<li>
-<p>Un <strong>remote</strong> es la página web host o servidor que va a almacenar su código remotamente en vez de tener únicamente el código de forma local en su propia computadora. Pueden pensar en esto de igual manera a como se almacena un archivo en DropBox o Google Drive pero con el poder que nos da git.</p>
-</li>
-<li>
-<p>Un <strong>branch</strong> es una secuencia (por aparte) de diferentes cambios a su código. Pueden pensar en los <em>branches</em> como diferentes versiones de su código, que en algún punto fueron lo mismo. La siguiente figura muestra a que nos referimos como branches.</p>
-</li>
-</ul>
-<p><img alt="branch" src="/assets/img/labs/lab00/branch.svg" /></p>
-<p>A lo largo de este curso, estarán trabajando en dos diferentes "<em>computadoras</em>" que generalmente tendran diferentes versiones de su código en algún tiempo. Estas dos son: su computadora personal y su remote de GitHub (sus repositorios privados de GitHub). Es esencial que entiendan la diferencia entre estas dos y como pueden compartir código entre ellas.</p>
-<ol>
-<li>Su <strong>computadora personal</strong> es la que les servirá para hacer todo el trabajo (laboratorios y proyectos) que necesiten hacer durante el curso, nada nuevo aquí.</li>
-<li>Su cuenta de GitHub y los <strong>remotes</strong> les servirán para muchos propósitos, pero la principal razón es para tener un backup o copia de respaldo, de tal manera que si algo malo le sucede a sus computadoras (esperamos no <i class="em em-wink"></i>), puedan recuperar su código en vez de empezar de cero nuevamente. Conceptualmente, pueden pensar en los remotes de GitHub como otra computadora que únicamente almacena su código y nada más. Siempre deben subir sus cambios a GitHub haciendo <em>push</em> al remote (es decir actualizando los archivos en GitHub) y también pueden descargar los cambios de GitHub haciendo <em>pull</em> (actualizando los archivos en su computadora personal).</li>
-</ol>
-<h3 id="haciendo-push-hacia-github">Haciendo push hacia GitHub</h3>
-<p>Vamos a crear un archivo llamado <code>hello.sh</code> en la carpeta del laboratorio ejecutando el siguiente commando en la terminal:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s1">&#39;echo &quot;Hola Mundo&quot;&#39;</span> &gt; hello.sh
-</code></pre></div>
-</td></tr></table>
-<p>Luego pueden correr el archivo en la terminal con <code>bash hello.sh</code>. En la terminal se imprimirá <code>Hola Mundo</code>. Ahora utilicemos git para ver los archivos que todavía no han sido rastreados utilizando <code>status</code>:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git status
-</code></pre></div>
-</td></tr></table>
-<p>Lo que producirá lo siguiente:</p>
+<h2 id="ejercicio-1-operando-bits">Ejercicio 1: Operando Bits</h2>
+<p>Para este inciso, su trabajo es completar los archivos <strong>ex1/get_bit.c</strong>, <strong>ex1/set_bit.c</strong> y <strong>ex1/flip_bit.c</strong> de manera que las funciones cumplan con su tarea (así como el nombre de las funciones sugiere). Para ello deberán utilizar las operaciones de bits básicas: and (&amp;), or (|), xor (^), not (~) y los corrimientos a la derecha (>>) y a la izquierda (&lt;&lt;). Deben evitar el uso de ciclos o condicionales.</p>
+<p>¡¡¡¡No usen ciclos ni condicionales!!!! Eso significa que mientras realicen el ejercicio no pueden y no deben de <strong>escribir</strong> las palabras: if, else, do, while, for, switch o algo de índole similar. Por favor no traten de engañarnos, todo el personal involucrado (esperamos) sabe cómo se miran todas estas palabras, entonces si encontramos una de ellas...</p>
+<p align="center">
+  <img src="/assets/img/labs/lab02/YouShallNotPassGIF.gif" alt="YOU SHALL NOT PASS" />
+  <br/>
+  <small>El autograder analiza su código de todas formas... ¯\_(ツ)_/¯ sorry not sorry</small>
+</p>
+
+<p><strong>NOTA IMPORTANTE:</strong> Considerar que <em>n</em> es un valor que inicia en la posición cero, contando desde la derecha, por lo que el bit que se encuentra hasta la derecha es el bit cero.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -767,105 +694,144 @@
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>On branch main
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">// Return the nth bit of x.</span>
+<span class="c1">// Assume 0 &lt;= n &lt;= 31</span>
+<span class="kt">unsigned</span> <span class="nf">get_bit</span><span class="p">(</span><span class="kt">unsigned</span> <span class="n">x</span><span class="p">,</span>
+                 <span class="kt">unsigned</span> <span class="n">n</span><span class="p">);</span>
 
-No commits yet
+<span class="c1">// Set the nth bit of the value of x to v.</span>
+<span class="c1">// Assume 0 &lt;= n &lt;= 31, and v is 0 or 1</span>
+<span class="kt">void</span> <span class="nf">set_bit</span><span class="p">(</span><span class="kt">unsigned</span> <span class="o">*</span> <span class="n">x</span><span class="p">,</span>
+             <span class="kt">unsigned</span> <span class="n">n</span><span class="p">,</span>
+             <span class="kt">unsigned</span> <span class="n">v</span><span class="p">);</span>
 
-Untracked files:
-  <span class="o">(</span>use <span class="s2">&quot;git add &lt;file&gt;...&quot;</span> to include <span class="k">in</span> what will be committed<span class="o">)</span>
-
-  hello.sh
-
-nothing added to commit but untracked files present <span class="o">(</span>use <span class="s2">&quot;git add&quot;</span> to track<span class="o">)</span>
+<span class="c1">// Flip the nth bit of the value of x.</span>
+<span class="c1">// Assume 0 &lt;= n &lt;= 31</span>
+<span class="kt">void</span> <span class="nf">flip_bit</span><span class="p">(</span><span class="kt">unsigned</span> <span class="o">*</span> <span class="n">x</span><span class="p">,</span>
+              <span class="kt">unsigned</span> <span class="n">n</span><span class="p">);</span>
 </code></pre></div>
 </td></tr></table>
-<p>Esto es porque hemos creado un archivo nuevo llamado <code>hello.sh</code> y no lo hemos agregado. Podemos agregarlo y hacer commit:</p>
+<p><strong>Ayuda</strong> para <em>set_bit</em>: La parte complicada es no saber el valor del bit antes de cambiarlo. Pero, sabemos que <em>0 | x = x</em>, pero ¿podemos aprovecharnos de esto? ¿Es posible volverlo cero?</p>
+<p>Una vez terminen de editar las funciones, pueden compilar y correr el código con:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git add hello.sh <span class="c1"># agrega el archivo hello.sh para hacer commit</span>
-git commit -m <span class="s2">&quot;Mensaje del Commit&quot;</span> <span class="c1"># ingresa cualquier mensaje que quieras</span>
-git branch <span class="c1"># deberias de ver que solo existe el branch main y que estas en ella (*)</span>
-git push -u origin main <span class="c1"># Esto hace push de tu codigo hacia GitHub (lo puedes ver en GitHub ahora)</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>make bit_ops
+./bit_ops
 </code></pre></div>
 </td></tr></table>
-<p>El control de versiones git esta construido alrededor de <em>commits</em>, o <em>checkpoints</em> en el desarrollo de diferentes versiones/etapas de su código. Para explicar los pasos de arriba un poco más:</p>
+<p>Lo cual imprimirá el resultado de algunas pruebas. Si tienen curiosidad pueden revisar con libertad la carpeta tests/ que contiene las pruebas que se van a realizar en cada ejercicio de este laboratorio y que reflejan bastante lo que evaluará el autograder, por ejemplo el archivo que se utiliza para este ejercicio es <strong>tests/bit_ops_test.c</strong>. De ahora en adelante hasta que esten 100% seguros de que tienen completo el laboratorio o ya esté cerca la hora de entregar su laboratorio, pueden mandar sus archivos como en los laboratorios pasados utilizando <code>./submit &lt;TOKEN&gt;</code>.</p>
+<p>Acuérdense de realizar el proceso de "hacerle push" al archivo para subirlo al repositorio de GitHub.</p>
+<h2 id="ejercicio-2-registro-de-corrimiento-con-retroalimentacion-lineal">Ejercicio 2: Registro de Corrimiento con Retroalimentación Lineal</h2>
+<p>En este ejercicio deben de implementar una función que compute la siguiente iteración de un registro de corrimiento de retroalimentación lineal (LFSR por sus siglas en inglés). ¡Algunas aplicaciones que utilizan LFSRs son: televisión digital, teléfonos con acceso múltiple por división de código, Ethernet, USB 3.0 y mucho más! Esta función deberá generar números pseudo-aleatorios utilizando operadores binarios. Para un poco de información adicional, pueden visitar el siguiente <a href="https://es.wikipedia.org/wiki/LFSR">link de Wikipedia</a>.
+En el archivo <strong>ex2/lfsr_calculate.c</strong> deben de completar la función <em>lfsr_calculate()</em> de manera que realice lo siguiente:</p>
+<h3 id="diagrama-del-hardware-explicacion-mas-abajo">Diagrama del Hardware (Explicación Más Abajo)</h3>
+<p align="center">
+  <img src="/assets/img/labs/lab02/LFSR-F16.gif" alt="LFSR" />
+</p>
+
+<h3 id="explicacion-del-diagrama-de-arriba">Explicación del Diagrama de Arriba</h3>
 <ul>
-<li><strong>git add [archivo]</strong> le dirá a git que han hecho cambios a ese archivo y que quieren que esos cambios se guarden en el siguiente commit (staging).</li>
-<li><strong>git commit -m "mensaje"</strong> oficialmente guarda esos cambios que acaban de agregar, y crea un <em>snapshot</em> del contenido actual de todos los archivos en el repositorio. Ahora siempre van a tener la opción de revertir su código hacia este commit.</li>
-<li><strong>git push -u origin main</strong> manda todo el contenido del repositorio que está en el branch "main" al repositorio remoto "origin" (recuerden que agregamos el repositorio de GitHub "lab0_git" como remote y lo llamamos "origin").</li>
+<li>En cada llamada de <em>lfsr_calculate()</em>, deben de correr el contenido del registro un bit hacia la derecha.</li>
+<li>Este corrimiento no es ni lógico, ni aritmético. En el lado izquierdo deben de colocar un bit equivalente a un XOR de los bits que estaban, originalmente, en las posiciones 1, 3, 4 y 6.</li>
+<li>El objeto que parece un faro de automóvil curvado es un XOR, el cual recibe dos entradas (a, b) y devuelve en su salida a^b.</li>
+<li>A diferencia del ejercicio 1, las posiciones de los bits <strong>inician con 1</strong>.</li>
 </ul>
-<p>Cuando estamos trabajando con git, si alguna vez no están seguros de algo, pero quieren asegurarse de que tienen una copia guardada del contenido actual de su código, solo tienen que correr <code>git add .</code> y después <code>git commit</code> en la terminal.</p>
-<p>Un último comando de git que pueden encontrar bastante util es <code>git log</code>. Pueden ejectuar este comando en la terminal y van a ver un historial o log de todos los commits que se han hecho (en el branch actual), incluyendo el tiempo y quien hizo el commit.</p>
-<h2 id="ejercicio-3-alfabeto-binario">Ejercicio 3: Alfabeto Binario</h2>
-<p>Vamos a utilizar números de 4 bits. Si apilamos cinco números de 4 bits uno encima de otro en binario, podemos crear patrones e imágenes. Para ayudarlos a visualizar esto, pueden pensar que un bit en cero es blanco y un bit en uno es negro. Por ejemplo miren el siguiente patrón de bits.</p>
-<p align="center"><img src="/assets/img/labs/lab00/ex3.png" alt="Patron de Bits"/></p>
-
-<h3 id="preguntas">Preguntas</h3>
-<ol>
-<li>¿Cuáles son los cinco números en decimal (separados por una coma) que producen el patrón de arriba?</li>
-<li>¿Cuáles son los cinco digitos en hexadecimal (separados por una coma) que producen el patrón de arriba?</li>
-<li>¿Qué letra se dibuja con los siguientes números en decimal: 1,1,9,9,6?</li>
-<li>¿Qué letra se dibuja con el siguiente numero en hexadecimal: 0xF8F88?</li>
-<li>¿Cuál es el numero en hexadecimal para dibujar la letra b (minúscula)?</li>
-<li>¿Utilizarías cinco dígitos hexadecimales para dibujar la letra N? Contesten Si o No</li>
-</ol>
-<p>En los archivos del laboratorio van a encontrar un archivo de texto <code>ex3.txt</code> con lo siguiente:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>1:
-2:
-3:
-4:
-5:
-6:
+<p>Después que hayan implementado de manera correcta <em>lfsr_calculate()</em>, compilen y córranlo. Su respuesta debe ser similar a lo siguiente:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>make lfsr
+./lfsr
+My number is: <span class="m">1</span>
+My number is: <span class="m">5185</span>
+My number is: <span class="m">38801</span>
+My number is: <span class="m">52819</span>
+My number is: <span class="m">21116</span>
+My number is: <span class="m">54726</span>
+My number is: <span class="m">26552</span>
+My number is: <span class="m">46916</span>
+My number is: <span class="m">41728</span>
+My number is: <span class="m">26004</span>
+My number is: <span class="m">62850</span>
+My number is: <span class="m">40625</span>
+My number is: <span class="m">647</span>
+My number is: <span class="m">12837</span>
+My number is: <span class="m">7043</span>
+My number is: <span class="m">26003</span>
+My number is: <span class="m">35845</span>
+My number is: <span class="m">61398</span>
+My number is: <span class="m">42863</span>
+My number is: <span class="m">57133</span>
+My number is: <span class="m">59156</span>
+My number is: <span class="m">13312</span>
+My number is: <span class="m">16285</span>
+ ... etc etc ...
+Got <span class="m">65535</span> numbers before cycling!
+Congratulations! It works!
 </code></pre></div>
 </td></tr></table>
-<p>En este archivo tienen que colocar todas sus respuestas de las preguntas de arriba siguiendo ese formato por ejemplo un archivo valido sería:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>1:1,2,3,4,5
-2:0x1,0x2,0x3,0x4,0x5
-3:A
-4:A
-5:0xcafee
-6:Si/No
+<p>De nuevo, recuérdense de hacer el push.</p>
+<h2 id="ejercicio-3-manejo-de-memoria">Ejercicio 3: Manejo de Memoria</h2>
+<p>Este ejercicio requiere de los archivos: <strong>tests/include/vector.h</strong>, <strong>tests/vector_test.c</strong> y <strong>ex3/vector.c</strong>, en donde les proveemos con la base para la implementación de un arreglo de longitud variable. Este inciso busca que se familiaricen con el uso de los "structs" de C, así como el manejo de memoria en este lenguaje. En otras palabras, no se preocupen por los detalles prácticos de esta estructura de datos un tanto extraña. Sólo no lo hagan.</p>
+<p><strong>Su trabajo es completar las funciones </strong> <em>vector_new()</em>, <em>vector_get()</em>, <em>vector_delete()</em> <strong>y</strong> <em>vector_set()</em> <strong>en</strong> <em>ex3/vector.c</em> <strong>de manera que</strong> <em>tests/vector-test.c</em> <strong>corra sin errores de manejo de memoria.</strong></p>
+<h3 id="como-funciona-un-vector_t">¿Cómo funciona un <em>vector_t</em>?</h3>
+<ul>
+<li>Posee un <em>int size</em> que indica cuántos elementos posee actualmente. En otras palabras, el <em>size</em> es igual al índice de la última posición que ha sido alterada del vector. Por ejemplo, si se tiene un vector con un <em>size</em> de 5 y se altera su ducentécimo bit (índice iniciando en cero), su tamaño se verá actualizado a 201. La longitud por defecto del vector <em>vector_new</em> es de 1.</li>
+<li>Tiene un <em>int *data</em>, un arreglo dinámico de enteros que contiene los valores de los componentes del vector. Si se altera el ducentécimo elemento de un vector <em>v</em> a 8 entonces el elemento modificado (de nuevo, iniciando en cero) de <em>v-&gt;data</em> debería evaluar a 8. El valor de un vector <em>vector_new</em> es 0 por defecto.</li>
+<li>El valor de cualquier componente de algún vector que no ha sido explícitamente editado es 0. Si se deseara conocer el valor en la quinta posición de un vector, pero sólo se ha alterado el valor de los primeras dos, la interrogante tendría como respuesta 0. Además, si se quisiera el contenido en la séptima posición de un vector de longitud igual a 5, también sería 0. <strong>NO</strong> devolvería un error.</li>
+</ul>
+<p>Es momento de revisar el código de <em>ex3/vector.c</em> si no lo han hecho. Aquí hay comentarios complementarios que describen cómo deberían de correr las funciones. Recuerden que los usuarios de su estructura de datos <em>vector_t</em> deben asumir que todas las entradas al vector son 0, a menos que hayan sido definidas de otra manera por ellos. Tengan esto en mente, porque <em>malloc</em> no hace esto por ustedes.</p>
+<h3 id="que-deben-hacer">¿Qué deben hacer?</h3>
+<ul>
+<li>Completen <em>vector_new</em>, la versión correcta. Hay exactamente seis (6) espacios para que escriban una expresión en C, indicados con el comentario que dice <em>/* YOUR CODE HERE */</em>. Escriban una <em>expresión</em> en estos sitios. Esto significa no más de una línea de código. Existen comentarios adicionales que describen qué debería de suceder en la línea de código inferior a cada división.</li>
+<li>Terminen <em>vector_get()</em> de la misma manera en que lo hicieron para la función anterior: de manera respetuosa, dispuesto a aprender, con mente abierta y conscientes de qué es lo que están escribiendo, ya que esta es la mejor forma de programar.</li>
+<li>Complementen <em>vector_delete()</em>. Una solución satisfactoria no debería de llevar más de dos líneas de código.</li>
+<li>Corrijan a <em>vector_set()</em>. Esta es la más complicada. Bienvenidos a las ligas mayores. El problema de manipular una posición/índice arbitrario en un vector <em>v</em> es que es posible que no se haya reservado suficiente espacio con <em>malloc</em> en <em>vector-&gt;data</em> (sí, eso significa que tuvieron que haber guardado memoria con <em>malloc</em>). Piensen cómo administrar la memoria para lograr esto, para ver qué hacer con la data que estaba ahí antes y de qué otras cosas deben de hacer en su nuevo bloque de datos. Ayuda: Recuerden que los índices que no hayan sido alterados deben de ser cero. Hay distintas formas de acabar resolviendo esta función. Consideren el uso de las 3 funciones <em>__alloc</em>, porque pueden resultar útiles...</li>
+</ul>
+<p>Saber cómo reorganizar y liberar memoria es importante para la programación en C. Piensen que el manejo de memoria es como un parqueo, si hay carros parqueados y los dueños nunca se van, entonces no tienen espacio para nuevos carros. <strong>Y recuerden que deberían tener un 'heap' vacío al terminar su programa. Utilicen free y todo estará bien.</strong></p>
+<h2 id="calificacion">Calificación</h2>
+<p>Por favor actualizar siempre la versión del CLI de autograders:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pip3 install --upgrade autograders-cli
 </code></pre></div>
 </td></tr></table>
-<p>Si ya contestaron todo y creen que está correcto pueden agregar los cambios, hacer commit y subirlo al repositorio remoto ejecutando los siguientes comandos en la terminal:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git add ex4.txt
-git commit -m <span class="s2">&quot;ex. 3 complete&quot;</span>
-git push -u origin main
+<p>Como en todos los demás laboratorios, hay un autograder y este no es la excepción. El <strong>staff</strong> trabajo bastante para que su experiencia en este curso sea de las mejores. Entregaremos este lab de la misma manera que el pasado.</p>
+<p>Navegue hacia la carpeta donde tiene sus archivos, haga un ls y asegurese que le aparece el archivo autograders.json; si aparecio, esta en el lugar correcto. Ahora puede entregar su laboratorio con...</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>autograder --upload
 </code></pre></div>
 </td></tr></table>
-<h2 id="ejercicio-4-1000-billetes-de-1">Ejercicio 4: 1,000 billetes de $1</h2>
-<p>Imaginen que tienen mil billetes de $1 y 10 sobres. Para este ejercicio tienen que encontrar una manera de poner una cantidad determinada de billetes de $1 en cada uno de los sobres de tal forma que, sin importar la cantidad de dinero que se les pida (entre $1 y $1000), simplemente entreguen una combinación de los sobres y que siempre estén seguros de que están dando la cantidad correcta.
-En los archivos del laboratorio hay un archivo de texto llamado <code>ex4.txt</code> en donde encontrarán lo siguiente:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>a,b,c,d,e,f,g,h,i,j
+<p>Espera un minuto aprox. y luego puede ver sus resultados con...</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>autograder --stats
 </code></pre></div>
 </td></tr></table>
-<p>Cada una de las letras representa un sobre, tienen que reemplazar cada letra por la cantidad de billetes de $1 que crean correcta, esa cantidad tiene que ser <code>&gt;= 0</code> (en decimal) y recuerda que la suma de la cantidad de cada uno de los sobres tiene que ser igual a <code>1000</code>.</p>
-<p>Si ya contestaron todo y creen que está correcto pueden agregar los cambios, hacer commit y subirlo al repositorio remoto ejecutando los siguientes comandos en la terminal:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>git add ex4.txt
-git commit -m <span class="s2">&quot;ex. 4 complete&quot;</span>
-git push -u origin main
-</code></pre></div>
-</td></tr></table>
-<h2 id="entrega-y-calificacion">Entrega y calificación</h2>
-<p>A partir del siguiente lab tendremos autograder y podran conocer su nota inmediatamente. Listo, terminaron su primer laboratorio. No olviden que tienen que subir <strong>SIEMPRE</strong> la URL del repositorio en la asignación del GES. La URL se tiene que ver algo como lo siguiente:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>https://www.github.com/cc3-an/2021-lab00-git-&lt;USUARIO&gt;
-</code></pre></div>
-</td></tr></table>
+<p>Si le aparece Queued: True, espere un par de minutos y luego repita el <code>autograder --stats</code> únicamente. Al terminar todo, suba el link de su repositorio al GES.</p>
                 
               
               
@@ -883,7 +849,7 @@ git push -u origin main
   
     <nav class="md-footer__inner md-grid" aria-label="Pie">
       
-        <a href="../.." class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../lab01/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -892,19 +858,19 @@ git push -u origin main
               <span class="md-footer__direction">
                 Anterior
               </span>
-              Inicio
+              01: C y GDB
             </div>
           </div>
         </a>
       
       
-        <a href="../lab01/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../lab03/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Siguiente
               </span>
-              01: C y GDB
+              03: Intro RISC-V
             </div>
           </div>
           <div class="md-footer__button md-icon">
